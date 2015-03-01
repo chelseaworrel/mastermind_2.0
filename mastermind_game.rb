@@ -17,7 +17,7 @@ class Game
     until win? || @user_input == "q"
       print "> "
       @user_input = gets.chomp
-      puts @secret if @user_input == "c"
+      print @secret if @user_input == "c"
       puts @board.correct_position(@secret, @user_input)
       puts @board.incorrect_position(@secret, @user_input)
       @time.finish_timer if win?
