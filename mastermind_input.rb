@@ -11,14 +11,21 @@ class Input
   def main_menu_user_input(input)
     if input == 'i'
       output.instructions
+      user_input = gets.chomp
+      if input == "p"
+        in_game == true
+        output.play_game
+      end
 
     elsif input == 'q'
       output.quit
       in_game = true
 
     elsif input == 'p'
-      output.play_game
+      output.play_game #need to loop until game is won
     end
   end
+
+
 
 end

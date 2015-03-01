@@ -1,12 +1,6 @@
-require_relative 'mastermind_output'
-
 class Board
-
   def initialize
-    @output = Output.new
   end
-  # def initialize
-  # end
 
   def create_secret
     colors = ["r","b","y","g"]

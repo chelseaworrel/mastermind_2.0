@@ -15,7 +15,7 @@ attr_reader :start, :finish
     @finish = Time.now #Game
   end
 
-  def elapsed #Printer
+  def elapsed #Output
    elapsed = finish.min - start.min
 
   end

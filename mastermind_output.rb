@@ -1,4 +1,6 @@
 require 'colorize'
+require_relative 'mastermind_game'
+
 class Output
 
   def greeting
@@ -21,10 +23,13 @@ class Output
   end
 
   def play_game
-   puts "I have generated a beginner sequence with four elements made up of:
+    board = Board.new
+    puts "\n"
+    puts "I have generated a beginner sequence
+    with four elements made up of:
    (r)ed,(g)reen, (b)lue, and (y)ellow. Use (q)uit at any time to end the game.
 
-   What's your guess?: #{mastermind.sequence}"
+   What's your guess?: #{board.create_secret}"
   end
 
   def instructions
@@ -42,13 +47,13 @@ class Output
   Along the way,you will be given hints about the code,
   until you guess the correct code.
 
-  Guess wisely, let's begin...."
-
+  Guess wisely, enter comman (p)lay and let's begin...."
+  puts "\n"
   end
 
-  def cheat
-    #If it’s 'c' or 'cheat' then print out the current secret code
-  end
+  # def cheat
+  #   puts "here is the answer: {#{board.create_secret}}"
+  # end
 
   def quit
   puts "Quitting...Goodbye" #figure out if you need to exit
@@ -66,4 +71,9 @@ class Output
    puts "Guess again!"
   end
 
+  def congratulations
+    board = Board.new
+    puts "Congratulations! You guessed the sequence {#{board.secret_code}} in {#{}} guesses over {#{timer.elapsed}}.
+    Do you want to (p)lay again or (q)uit?"
+  end
 end
