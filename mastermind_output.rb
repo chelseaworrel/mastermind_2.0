@@ -7,9 +7,9 @@ class Output
     print "\e[2J\e[f"
 
     puts'  /\/\   __ _ ___| |_ ___ _ __ _ __ ___ (_)_ __   __| | '.blue
-    puts' /    \ / _` / __| __/ _ \  __|  _ ` _ \| |  _ \ / _` | '.yellow
-    puts'/ /\/\ \ (_| \__ \ ||  __/ |  | | | | | | | | | | (_| | '.green
-    puts'\/    \/\__,_|___/\__\___|_|  |_| |_| |_|_|_| |_|\__,_| '.red
+    puts' /    \ / _` / __| __/ _ \  __|  _ ` _ \| |  _ \ / _` | '.light_blue
+    puts'/ /\/\ \ (_| \__ \ ||  __/ |  | | | | | | | | | | (_| | '.cyan
+    puts'\/    \/\__,_|___/\__\___|_|  |_| |_| |_|_|_| |_|\__,_| '.light_cyan
 
     puts "\n"
     puts "\n"
@@ -23,17 +23,18 @@ class Output
   end
 
   def play_game
-    board = Board.new
     puts "\n"
     puts "I have generated a beginner sequence
     with four elements made up of:
-   (r)ed,(g)reen, (b)lue, and (y)ellow. Use (q)uit at any time to end the game.
+   (r)ed, (g)reen, (b)lue, and (y)ellow. Use (q)uit at any time to end the game."
 
-   What's your guess?: #{board.create_secret}"
+    puts "What's your guess?" #{board.create_secret}"
+
+
   end
 
   def instructions
-  puts "INSTRUCIONS:
+  puts "INSTRUCTIONS:
 
   Once the game begins, a random mystery sequence code will be generated
   consisting of the following 4 elements:
@@ -44,36 +45,25 @@ class Output
   Your task is to guess the code AS FAST AS YOU CAN!
 
 
-  Along the way,you will be given hints about the code,
+  Along the way, you will be given hints about the code,
   until you guess the correct code.
 
-  Guess wisely, enter comman (p)lay and let's begin...."
+  Guess wisely, enter command (p)lay and let's begin...."
   puts "\n"
   end
 
-  # def cheat
-  #   puts "here is the answer: {#{board.create_secret}}"
-  # end
 
   def quit
-  puts "Quitting...Goodbye" #figure out if you need to exit
-  end
-
-  def make_guess
-    puts "Enter your guess:"
+  puts "Winners never quit, and quitters never win...Goodbye"
   end
 
   def winner
   puts "Winner!"
   end
 
-  def guess_again
-   puts "Guess again!"
-  end
-
-  def congratulations
-    board = Board.new
-    puts "Congratulations! You guessed the sequence {#{board.secret_code}} in {#{}} guesses over {#{timer.elapsed}}.
+  def congratulations(secret, timer)
+    puts "Congratulations! You guessed the sequence {#{secret}}
+    in {#{timer}}.
     Do you want to (p)lay again or (q)uit?"
   end
 end

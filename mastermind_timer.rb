@@ -1,23 +1,23 @@
+require_relative 'mastermind_game'
 class Timer
 attr_reader :start, :finish
 
   def initialize
-   @start = start
-   @finish = finish
+   @start = nil
+   @finish = nil
 
   end
 
-  def start
+  def start_timer
     @start = Time.now #Game
   end
 
-  def finish
+  def finish_timer
     @finish = Time.now #Game
   end
 
   def elapsed #Output
-   elapsed = finish.min - start.min
-
+    @finish - @start
   end
 
   def start_minutes
@@ -28,12 +28,4 @@ attr_reader :start, :finish
     finish_timer_minutes = finish.min
   end
 
-
-
 end
-
-
-timer = Timer.new
-puts timer.start_minutes
-puts timer.finish_minutes
-puts timer.elapsed
