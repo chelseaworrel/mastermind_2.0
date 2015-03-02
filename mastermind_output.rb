@@ -68,7 +68,7 @@ class Output
 
   def congratulations(secret, timer)
     puts "Congratulations! You guessed the sequence #{secret}
-    in #{timer} seconds.
-    Do you want to (p)lay again or (q)uit?".magenta
+    in #{timer} seconds.".magenta
+    puts "Do you want to (p)lay again or (q)uit?"
   end
 end

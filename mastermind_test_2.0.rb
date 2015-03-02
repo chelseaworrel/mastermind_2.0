@@ -6,17 +6,6 @@ require_relative 'mastermind_output'
 
 
 class BoardTest < Minitest::Test
-  def test_it_can_cheat
-    skip
-    output = Output.new
-
-    result = output.create_secret
-
-    assert_equal result, result
-  end
-end
-
-class BoardTest < Minitest::Test
 
   def test_it_outputs_an_array
     board = Board.new
