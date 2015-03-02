@@ -15,7 +15,6 @@ class Output
     puts "\n"
     puts "\n"
     puts "\n"
-
   end
 
   def main_menu
@@ -37,33 +36,33 @@ class Output
   end
 
   def instructions
-  puts "INSTRUCTIONS:
+    puts "INSTRUCTIONS:
 
-  Once the game begins, a random mystery sequence code will be generated
-  consisting of the following 4 elements:"
-  puts '(r)ed'.red
-  puts '(y)ellow'.yellow
-  puts '(g)reen'.green
-  puts '(b)lue'.blue
-  puts "\n"
-  puts"This code will be hidden from you.
-  Your task is to guess the code AS FAST AS YOU CAN!
+    Once the game begins, a random mystery sequence code will be generated
+    consisting of the following 4 elements:"
+    puts '(r)ed'.red
+    puts '(y)ellow'.yellow
+    puts '(g)reen'.green
+    puts '(b)lue'.blue
+    puts "\n"
+    puts"This code will be hidden from you.
+    Your task is to guess the code AS FAST AS YOU CAN!
 
 
-  Along the way, you will be given hints about the code,
-  until you guess the correct code.
+    Along the way, you will be given hints about the code,
+    until you guess the correct code.
 
-  Guess wisely, enter command (p)lay and let's begin...."
-  puts "\n"
+    Guess wisely, enter command (p)lay and let's begin...."
+    puts "\n"
   end
 
 
   def quit
-  puts "Winners never quit, and quitters never win...Goodbye".cyan
+    puts "Winners never quit, and quitters never win...Goodbye".cyan
   end
 
   def winner
-  puts "Winner!"
+    puts "Winner!"
   end
 
   def congratulations(secret, timer)

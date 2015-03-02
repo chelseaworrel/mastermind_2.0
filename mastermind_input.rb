@@ -1,6 +1,5 @@
 require_relative 'mastermind_output'
 
-
 class Input
   attr_reader :output
 
@@ -10,7 +9,7 @@ class Input
 
   def main_menu_user_input(input)
     if input == 'p'
-      output.play_game #need to loop until game is won
+      output.play_game
       user_input = gets.chomp
       in_game == true
     end
@@ -21,7 +20,6 @@ class Input
       if input == "p"
         in_game == true
         output.play_game
-        #until game == won 
       end
 
     elsif input == 'q'
@@ -29,7 +27,7 @@ class Input
       in_game = true
 
     elsif input == 'p'
-      output.play_game #need to loop until game is won
+      output.play_game
     end
   end
 

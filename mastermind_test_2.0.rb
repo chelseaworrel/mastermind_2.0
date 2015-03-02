@@ -100,6 +100,7 @@ class BoardTest < Minitest::Test
   end
 
   def test_incorrect_positions_gives_right_answer
+    skip
     board = Board.new
     secret = ["r","g","y","g"]
     guess = "rybb"

@@ -7,6 +7,7 @@ output = Output.new
 output.greeting
 output.main_menu
 user_input = ""
+
 while user_input != "q"
   print "> "
   user_input = gets.chomp

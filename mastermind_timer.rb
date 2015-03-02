@@ -1,11 +1,11 @@
 require_relative 'mastermind_game'
+
 class Timer
 attr_reader :start, :finish
 
   def initialize
    @start = nil
    @finish = nil
-
   end
 
   def start_timer
