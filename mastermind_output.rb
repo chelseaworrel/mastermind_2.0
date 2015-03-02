@@ -6,6 +6,7 @@ class Output
   def greeting
     print "\e[2J\e[f"
 
+    puts'                  _                                  _  '.blue
     puts'  /\/\   __ _ ___| |_ ___ _ __ _ __ ___ (_)_ __   __| | '.blue
     puts' /    \ / _` / __| __/ _ \  __|  _ ` _ \| |  _ \ / _` | '.light_blue
     puts'/ /\/\ \ (_| \__ \ ||  __/ |  | | | | | | | | | | (_| | '.cyan
