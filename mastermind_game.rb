@@ -19,8 +19,8 @@ class Game
       @user_input = gets.chomp
       print @secret if @user_input == "c"
       @board.check_input(@secret, @user_input)
-      puts "You have #{@board.correct_position(@secret, @user_input)} correct positions out of 4"
-      puts "You have #{@board.incorrect_position(@secret, @user_input)} correct colors out of 4"
+      puts "You have #{@board.correct_position(@secret, @user_input)} correct position(s) out of 4"
+      puts "You have #{@board.incorrect_position(@secret, @user_input)} correct color(s) out of 4"
       @time.finish_timer if win?
       puts "Timer: #{Time.now - @time.start} seconds"
       if win?
@@ -58,11 +58,11 @@ attr_reader :create_secret
   end
 
   def check_input(secret, guess)
-    if !too_short?(guess) || !too_long?(guess)
+    if !too_short?(guess) && !too_long?(guess)
       correct_position(secret, guess)
       matcher(secret, guess)
     else
-      puts "please guess a four letter sequence"
+      puts "please guess a four letter sequence".red
     end
   end
 
