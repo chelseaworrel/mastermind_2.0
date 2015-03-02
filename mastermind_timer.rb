@@ -9,14 +9,14 @@ attr_reader :start, :finish
   end
 
   def start_timer
-    @start = Time.now #Game
+    @start = Time.now
   end
 
   def finish_timer
-    @finish = Time.now #Game
+    @finish = Time.now
   end
 
-  def elapsed #Output
+  def elapsed
     @finish - @start
   end
 

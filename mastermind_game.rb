@@ -17,7 +17,6 @@ class Game
     until win? || @user_input == "q"
       print "> "
       @user_input = gets.chomp
-      print @secret if @user_input == "c"
       @board.check_input(@secret, @user_input)
       puts "You have #{@board.correct_position(@secret, @user_input)} correct position(s) out of 4"
       puts "You have #{@board.incorrect_position(@secret, @user_input)} correct color(s) out of 4"
@@ -58,7 +57,9 @@ attr_reader :create_secret
   end
 
   def check_input(secret, guess)
-    if !too_short?(guess) && !too_long?(guess)
+    if guess == "c"
+      puts "Cheater: #{secret}".cyan
+    elsif !too_short?(guess) && !too_long?(guess)
       correct_position(secret, guess)
       matcher(secret, guess)
     else
