@@ -29,7 +29,7 @@ class Output
     puts '(g)reen'.green
     puts '(b)lue'.blue
     puts '(y)ellow'.yellow
-    puts '\n'
+    puts "\n"
     puts 'Use (q)uit to end the game.'.cyan
     puts "\n"
     puts 'What it your guess?'
