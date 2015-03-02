@@ -63,7 +63,7 @@ attr_reader :create_secret
       correct_position(secret, guess)
       matcher(secret, guess)
     else
-      puts "please guess a four letter sequence".red
+      puts "Please guess a four letter sequence".red
     end
   end
 

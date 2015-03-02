@@ -30,9 +30,10 @@ class Output
     puts '(g)reen'.green
     puts '(b)lue'.blue
     puts '(y)ellow'.yellow
-    puts 'Use (q)uit to end the game.'
     puts "\n"
-    puts "What's your guess?" #{board.create_secret}
+    puts 'Use (q)uit to end the game.'.cyan
+    puts "\n"
+    puts "What's your guess?"
   end
 
   def instructions
@@ -58,7 +59,7 @@ class Output
 
 
   def quit
-  puts "Winners never quit, and quitters never win...Goodbye"
+  puts "Winners never quit, and quitters never win...Goodbye".cyan
   end
 
   def winner
