@@ -17,7 +17,7 @@ class Input
     if input == 'i'
       output.instructions
       user_input = gets.chomp
-      if input == "p"
+      if input == 'p'
         in_game == true
         output.play_game
       end

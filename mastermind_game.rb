@@ -34,7 +34,7 @@ class Game
 
 end
 
-class Board
+class Board #need to create as a sep. file
 attr_reader :create_secret
 
   def initialize
@@ -57,7 +57,7 @@ attr_reader :create_secret
   end
 
   def check_input(secret, guess)
-    if guess == "c"
+    if guess == 'c'
       puts "Cheater: #{secret}".cyan
     elsif !too_short?(guess) && !too_long?(guess)
       correct_position(secret, guess)

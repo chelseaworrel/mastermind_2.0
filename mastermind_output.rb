@@ -18,8 +18,8 @@ class Output
   end
 
   def main_menu
-      puts "MAIN MENU: Would you like to (p)lay, read the (i)nstructions,
-      (c)heat or (q)uit? -ENTER A COMMAND:"
+      puts 'MAIN MENU: Would you like to (p)lay, read the (i)nstructions,
+      (c)heat or (q)uit? -ENTER A COMMAND:'
   end
 
   def play_game
@@ -29,17 +29,17 @@ class Output
     puts '(g)reen'.green
     puts '(b)lue'.blue
     puts '(y)ellow'.yellow
-    puts "\n"
+    puts '\n'
     puts 'Use (q)uit to end the game.'.cyan
     puts "\n"
-    puts "What's your guess?"
+    puts 'What it your guess?'
   end
 
   def instructions
-    puts "INSTRUCTIONS:
+    puts 'INSTRUCTIONS:
 
     Once the game begins, a random mystery sequence code will be generated
-    consisting of the following 4 elements:"
+    consisting of the following 4 elements:'
     puts '(r)ed'.red
     puts '(y)ellow'.yellow
     puts '(g)reen'.green
@@ -58,16 +58,16 @@ class Output
 
 
   def quit
-    puts "Winners never quit, and quitters never win...Goodbye".cyan
+    puts 'Winners never quit, and quitters never win...Goodbye'.cyan
   end
 
   def winner
-    puts "Winner!"
+    puts 'Winner!'
   end
 
   def congratulations(secret, timer)
     puts "Congratulations! You guessed the sequence #{secret}
     in #{timer} seconds.".magenta
-    puts "Do you want to (p)lay again or (q)uit?"
+    puts 'Do you want to (p)lay again or (q)uit?'
   end
 end
