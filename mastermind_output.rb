@@ -38,11 +38,13 @@ class Output
   puts "INSTRUCTIONS:
 
   Once the game begins, a random mystery sequence code will be generated
-  consisting of the following 4 elements:
-  (r)ed, (y)ellow, (g)reen, (b)lue.
-
-
-  This code will be hidden from you.
+  consisting of the following 4 elements:"
+  puts '(r)ed'.red
+  puts '(y)ellow'.yellow
+  puts '(g)reen'.green
+  puts '(b)lue'.blue
+  puts "\n"
+  puts"This code will be hidden from you.
   Your task is to guess the code AS FAST AS YOU CAN!
 
 
@@ -64,7 +66,7 @@ class Output
 
   def congratulations(secret, timer)
     puts "Congratulations! You guessed the sequence #{secret}
-    in #{timer}.
-    Do you want to (p)lay again or (q)uit?"
+    in #{timer} seconds.
+    Do you want to (p)lay again or (q)uit?".magenta
   end
 end

@@ -22,16 +22,3 @@ while user_input != "q"
     output.quit
   end
 end
-
-
-
-
-# while in_game == false
-#   output.main_menu
-#   user_input = gets.chomp
-#   menu.main_menu_user_input(user_input)
-# until in_game == true
-#   output.play_game
-#   user_input = gets.chomp
-#   output.play_game
-# end
