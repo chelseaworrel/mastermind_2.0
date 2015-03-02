@@ -18,8 +18,8 @@ class Output
   end
 
   def main_menu
-      puts 'MAIN MENU: Would you like to (p)lay, read the (i)nstructions,
-      (c)heat or (q)uit? -ENTER A COMMAND:'
+    puts 'MAIN MENU: Would you like to (p)lay, read the (i)nstructions,
+    (c)heat or (q)uit? -ENTER A COMMAND:'
   end
 
   def play_game
