@@ -1,5 +1,5 @@
-require_relative 'mastermind_output'
-require_relative 'mastermind_timer'
+require_relative 'output'
+require_relative 'timer'
 
 class Game
 

@@ -1,4 +1,4 @@
-require_relative 'mastermind_output'
+require_relative 'output'
 
 class Input
   attr_reader :output

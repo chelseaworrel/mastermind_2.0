@@ -1,8 +1,8 @@
 gem 'minitest'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'mastermind_game'
-require_relative 'mastermind_output'
+require_relative 'game'
+require_relative 'output'
 
 
 class BoardTest < Minitest::Test
@@ -121,8 +121,6 @@ class BoardTest < Minitest::Test
   end
 end
 
-# require_relative 'mastermind_output'
-# require_relative 'mastermind_2.0'
 
 # class OutputTest < Minitest::Test
 #   def test_the_menu_exsists

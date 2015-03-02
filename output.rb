@@ -1,5 +1,5 @@
 require 'colorize'
-require_relative 'mastermind_game'
+require_relative 'game'
 
 class Output
 

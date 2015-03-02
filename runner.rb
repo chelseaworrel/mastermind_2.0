@@ -1,6 +1,6 @@
-require_relative 'mastermind_input'
-require_relative 'mastermind_output'
-require_relative 'mastermind_game'
+require_relative 'input'
+require_relative 'output'
+require_relative 'game'
 
 output = Output.new
 
